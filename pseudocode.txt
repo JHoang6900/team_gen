@@ -24,3 +24,30 @@ assemble team:
 **emails must be default email to
 ** Githubs have to be links
 
+
+
+
+const inquirer = require('inquirer');
+const fs = require('fs');
+
+ManagerHTML 
+
+EngineerHTML
+
+InternHTML
+
+promptManager
+promptEngineer
+promptIntern
+handleWriteFile
+
+
+
+
+ShowQuestions
+handleMenuSelection
+
+
+
+
+
