@@ -1,6 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+
+let teamMembersHTML = "";
+
 const managerHTML = ({
   managerName,
   managerID,
@@ -11,7 +14,6 @@ const managerHTML = ({
       <div class="card employee-card mx-auto">
         <div class="card-header">
           <h2 class="card-title">${managerName}</h2>
-          
         </div>
         <div class="card-body">
           <ul class="list-group">
@@ -87,6 +89,8 @@ async function handleAddManager() {
     },
   ]);
   const managerHTMLContent = managerHTML(managerAnswers);
+  teamMembersHTML += managerHTMLContent;
+  
   main();
   return managerHTMLContent;
 }
@@ -114,6 +118,8 @@ async function handleAddEngineer() {
     },
   ]);
   const engineerHTMLContent = engineerHTML(engineerAnswers);
+  teamMembersHTML += engineerHTMLContent;
+  
   main();
   return engineerHTMLContent;
 }
@@ -142,6 +148,8 @@ async function handleAddIntern() {
     },
   ]);
   const internHTMLContent = internHTML(internAnswers);
+  teamMembersHTML += internHTMLContent;
+  
   main();
   return internHTMLContent;
 }
@@ -171,9 +179,7 @@ async function handleWriteFile() {
     <main>
       <div class="container">
         <div class="row">
-          ${managerHTMLContent}
-          ${engineerHTMLContent}
-          ${internHTMLContent}
+        ${teamMembersHTML}
         </div>
       </div>
     </main>
