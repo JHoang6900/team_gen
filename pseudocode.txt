@@ -1,0 +1,26 @@
+command line start:
+- enter team manager:
+    - name
+    - ID
+    - email
+    - office number
+
+enter engineer:
+    - name 
+    - ID
+    - email
+    - github username
+
+enter intern:
+    - intern's name
+    - ID
+    - email
+    - school
+
+assemble team: 
+    - generate HTML 
+    - end program 
+
+**emails must be default email to
+** Githubs have to be links
+
