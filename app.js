@@ -14,6 +14,7 @@ const managerHTML = ({
       <div class="card employee-card mx-auto">
         <div class="card-header">
           <h2 class="card-title">${managerName}</h2>
+          <h3 class="card-title"> Manager </h3>
         </div>
         <div class="card-body">
           <ul class="list-group">
@@ -36,29 +37,31 @@ const engineerHTML = ({
       <div class="card employee-card">
         <div class="card-header">
           <h2 class="card-title">${engineerName}</h2>
+          <h3 class="card-title"> Engineer </h3>
         </div>
         <div class="card-body">
           <ul class="list-group">
             <li class="list-group-item">ID: ${engineerID}</li>
             <li class="list-group-item">Email: <a href="mailto:${engineerEmail}">${engineerEmail}</a></li>
-            <li class="list-group-item">Github: ${engineerGithub}</li>
+            <li class="list-group-item">Github: <a href="https://www.github.com/${engineerGithub}"> ${engineerGithub}</a></li>
           </ul>
         </div>
       </div>
 `;
 }
 
-const internHTML = ({ internName, internID, internEmail, internGithub }) => {
+const internHTML = ({ internName, internID, internEmail, internSchool }) => {
     return `
             <div class="card employee-card">
               <div class="card-header">
                 <h2 class="card-title">${internName}</h2>
+                <h3 class="card-title"> Intern </h3>
               </div>
               <div class="card-body">
                 <ul class="list-group">
                   <li class="list-group-item">ID: ${internID}</li>
                   <li class="list-group-item">Email: <a href="mailto:${internEmail}">${internEmail}</a></li>
-                  <li class="list-group-item">Github: ${internGithub}</li>
+                  <li class="list-group-item">School: ${internSchool}</li>
                 </ul>
               </div>
             </div>
@@ -143,8 +146,8 @@ async function handleAddIntern() {
     },
     {
       type: "input",
-      name: "internGithub",
-      message: "What's the intern's GitHub username?",
+      name: "internSchool",
+      message: "What school does this intern attend?",
     },
   ]);
   const internHTMLContent = internHTML(internAnswers);
