@@ -1,5 +1,10 @@
 # 10 Object-Oriented Programming: Team Profile Generator
 
+## Overview
+## [Demo Video](https://drive.google.com/file/d/1d4YtkpKMaC1DUsRdlLB1sFaPSGM20cp6/view?usp=sharing)
+## [Sample HTML Generation](https://github.com/JHoang6900/team_gen/blob/main/index.html)
+## [Github Repo](https://github.com/JHoang6900/team_gen)
+
 ## My Task
 
 My task was to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person with the use of the `Inquirer` package.
@@ -50,12 +55,4 @@ The following image shows a mock-up of the generated HTML’s appearance and fun
 ![Demo Picture](https://github.com/JHoang6900/team_gen/blob/main/Assets/homework-demo.png)
 
 
-## Review
 
-You are required to submit the following for review:
-
-* A walkthrough video that demonstrates the functionality of the application and passing tests.
-
-* A sample HTML file generated using your application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
