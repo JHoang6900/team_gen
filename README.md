@@ -47,7 +47,7 @@ node app.js
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality:
 
-![Demo Picture](./Assets/10-object-oriented-programming-homework-demo.png)
+![Demo Picture](https://github.com/JHoang6900/team_gen/blob/main/Assets/homework-demo.png)
 
 
 ## Review
